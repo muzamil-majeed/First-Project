@@ -1,0 +1,58 @@
+#main_container {
+    background: linear-gradient(160deg, #307ecc, #6bb8ff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+}
+
+.agency-name {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.agency-tagline {
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+
+#about-us {
+    background-color: #deeaf4; /* Light bluish background */
+    border-radius: 10px;       /* Rounded corners */
+    border-style:double ;
+    margin: 40px auto;         /* Space around the section */
+    padding: 40px 20px;        /* Internal padding */
+    max-width: 900px;          /* Limit width for readability */
+    box-shadow: 5px 4px 8px rgba(0,0,0,0.5); /* Subtle shadow */
+    text-align: center;        /* Center the text */
+}
+
+#about-us h2 {
+    font-size: 32px;
+    color: #073874;            /* Dark blue heading */
+    margin-bottom: 20px;
+ 
+}
+
+
+
+#about-us p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 750px; /* Keep text readable */
+
+}
+
+
+#mission{
+    background-color:#92c1e8; 
+    padding: 80px 20px;
+    text-align: center;
+
+}

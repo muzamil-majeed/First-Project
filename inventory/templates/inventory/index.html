@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+ {% block css_files %}
+    <link rel="stylesheet" href="{% static 'inventory/index.css' %}?v=">
+  {% endblock %}
+
+{% block content %}
+
+    <div id="main_container">
+        <section id="navigation">
+        
+            <a class="home-page" href=""><h2> Home</h2> </a>
+
+            <p>👋 Welcome To New Al Arif Medical Agency</p>
+        
+            <a class="about-us" href="{% url 'about-page' %}"><h3>About Us</h3></a>       
+        </section>
+
+        <section id="welcome">
+            <header>
+                <div>
+                    <a href="">
+                        <img src="{% static 'inventory/images/myprofile.png' %}" alt="CEO New Al Arif">
+                    </a>
+                    <h1>Mr.Malik Arif Bashir</h1>
+                    <h4>CEO New Al Arif</h4>
+                </div>
+               
+                <div class="message">
+                    <p class='ceo-message'>                 
+                        "At New Al Arif Medical Agency, trust is the foundation of everything we do.
+                        We understand that your health is your most valuable asset, and it is our
+                        responsibility to provide care that is not only effective but also
+                        transparent and reliable. Every recommendation, every treatment,
+                        and every interaction is guided by our commitment to your well-being and
+                        confidence in our services. Your trust empowers us to continue advancing
+                        healthcare with integrity and compassion."                  
+                    </p>
+                    <h2>[Message from ceo]</h2>
+                </div>
+            
+            </header>
+        </section>
+
+
+    </div>
+
+    <div id="order-container">
+
+            <a href="{%  url 'order-page' %}"><p> click here to order items </p></a>
+    </div>
+
+
+
+        <section id="services">
+            <div class=box-inside-services>
+                <h3>Whole Sale Medicine Supply</h3>
+                <p>Reliable and genuine medicines at best prices</p>
+            </div>
+            <div class=box-inside-services>
+                <h3>Fast Delivery And distribution</h3>
+                <p>Quick and safe delivery across all over word</p>
+            </div>
+            <div class=box-inside-services>
+                <h3>Genuine And Products Only</h3>
+                <p>100% authentic pharmaceutical suppliers</p>
+            </div>
+        </section>
+
+
+        <section id="thank-you">
+            <h1 id="thank-you-text">
+                ✨Thanks For Visiting US✨
+            </h1>
+        </section>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    order-page
+{% endblock %}
+
+
+{% block css_files %} 
+    <link rel="stylesheet" href="{% static 'inventory/order.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Place Your Order here</h1>
+    <h3>Fill Out The Details Below</h3>
+    <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="form-control">
+            {{  field.label_tag }}  
+            {{ field }}
+        </div>
+        {% endfor %}     
+        <button type="submit">submit</button>
+
+    </form>
+
+{% endblock %}

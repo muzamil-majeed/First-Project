@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} about {% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'inventory/about_us.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section id="main_container">
+    <div class="name-class">
+        <h1>New Al Arif Medical Agency Pulwama</h1>
+        <p class="agency-tagline">Providing Trusted and Compassionate Healthcare Solutions</p>
+    </div>
+</section>
+
+<section id="about-us">
+    <h2>Who We Are</h2>
+    <p>
+        New Al Arif Medical Agency Pulwama was established with the goal of providing reliable
+        and compassionate medical support services to the community.Over the years,
+        we have become a trusted partner for hospitals, clinics, and families seeking 
+        quality healthcare assistance.
+    </p>
+
+</section>
+
+
+
+<section id="mission">
+    <h2>Our Mission</h2>
+    <p>
+        Our mission is to deliver trustworthy healthcare solutions that meet the needs of patients, families, and healthcare 
+        institutions, ensuring safety, reliability, and professionalism in every service we provide.
+    </p>
+</section>
+
+
+
+
+
+<section id="services">
+    <h2>What We Do</h2>
+    <ul>
+        <li>Home Nursing and Patient Care Services</li>
+        <li>Medical Equipment Supply</li>
+        <li>Qualified Nursing and Care Staff Placement</li>
+        <li>Emergency Medical Support</li>
+        <li>Hospital and Clinic Collaboration Services</li>
+        <li>Rehabilitation and Physiotherapy Assistance</li>
+    </ul>
+</section>
+
+{% endblock %}
